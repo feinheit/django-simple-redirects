@@ -11,3 +11,6 @@ Usage:
 - Migrate
 - Add ``sane_redirects.middleware.RedirectFallbackMiddleware`` to
   ``MIDDLEWARE_CLASSES``
+
+.. image:: https://travis-ci.org/feinheit/django-sane-redirects.svg?branch=master
+    :target: https://travis-ci.org/feinheit/django-sane-redirects
