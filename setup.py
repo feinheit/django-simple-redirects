@@ -1,16 +1,10 @@
 #!/usr/bin/env python
 
-import os
+from os.path import join, dirname
 from setuptools import find_packages, setup
 
-
-with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
-    README = readme.read()
-
-
-# allow setup.py to be run from any path
-os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
-
+with open(join(dirname(__file__), 'README.rst')) as f:
+    README = f.read()
 
 setup(
     name='django-sane-redirects',
