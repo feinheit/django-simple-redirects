@@ -1,5 +1,11 @@
 from __future__ import absolute_import, unicode_literals
 
+from coverage import Coverage
+
+cov = Coverage()  # noqa
+cov.start()  # noqa
+
+
 import sys
 import django
 from django.conf import settings
@@ -32,6 +38,9 @@ def runtests():
 
     test_runner = get_runner(settings)(verbosity=2, interactive=True)
     failures = test_runner.run_tests([])
+
+    cov.stop()
+    cov.html_report(directory='htmlcov', include='*/sane_redirects/*')
     sys.exit(failures)
 
 

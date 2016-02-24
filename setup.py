@@ -40,5 +40,5 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     test_suite='testapp.runtests.runtests',
-    tests_require=['Django'],
+    tests_require=['Django', 'coverage'],
 )
