@@ -10,7 +10,6 @@ class RedirectsTestCase(TestCase):
             new_path='/something-else/',
         )
 
-        response = self.client.get('/something/')
         self.assertRedirects(
             self.client.get('/something/'),
             '/something-else/',
