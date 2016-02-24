@@ -20,5 +20,25 @@ class RedirectsTestCase(TestCase):
         self.assertRedirects(
             self.client.get('/something/'),
             '/something-else/',
-            fetch_redirect_response=False,
+        )
+        self.assertRedirects(
+            self.client.get('/something'),
+            '/something-else/',
+        )
+
+        self.assertContains(
+            self.client.get('/something-else/'),
+            'Hello',
+        )
+
+        self.assertContains(
+            self.client.get('/does-not-exist/'),
+            'Not found',
+            status_code=404,
+        )
+
+        self.assertContains(
+            self.client.get('/does-not-exist'),
+            'Not found',
+            status_code=404,
         )

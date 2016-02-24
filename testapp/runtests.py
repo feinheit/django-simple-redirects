@@ -40,7 +40,11 @@ def runtests():
     failures = test_runner.run_tests([])
 
     cov.stop()
-    cov.html_report(directory='htmlcov', include='*/sane_redirects/*')
+    cov.html_report(
+        directory='htmlcov',
+        include=['*/sane_redirects/*'],
+        omit=['*migrations*'],
+    )
     sys.exit(failures)
 
 
