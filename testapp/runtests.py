@@ -6,6 +6,7 @@ cov = Coverage()  # noqa
 cov.start()  # noqa
 
 
+import os
 import sys
 import django
 from django.conf import settings
@@ -44,6 +45,11 @@ def runtests():
         include=['*/sane_redirects/*'],
         omit=['*migrations*'],
     )
+    if 'TRAVIS' not in os.environ:
+        cov.html_report(
+            include=['*/sane_redirects/*'],
+            omit=['*migrations*'],
+        )
     sys.exit(failures)
 
 
