@@ -8,7 +8,7 @@ with open(join(dirname(__file__), 'README.rst')) as f:
 
 setup(
     name='django-sane-redirects',
-    version='1.0.0',
+    version='1.0.1',
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',
