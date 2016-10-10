@@ -2,11 +2,12 @@ from __future__ import absolute_import, unicode_literals
 
 from django.conf import settings
 from django.http import HttpResponseRedirect
+from django.utils.deprecation import MiddlewareMixin
 
 from .models import Redirect
 
 
-class RedirectFallbackMiddleware(object):
+class RedirectFallbackMiddleware(MiddlewareMixin):
     def process_response(self, request, response):
         if response.status_code != 404:
             return response
