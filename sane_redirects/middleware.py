@@ -2,7 +2,10 @@ from __future__ import absolute_import, unicode_literals
 
 from django.conf import settings
 from django.http import HttpResponseRedirect
-from django.utils.deprecation import MiddlewareMixin
+try:
+    from django.utils.deprecation import MiddlewareMixin
+except ImportError:  # Django<1.9
+    MiddlewareMixin = object
 
 from .models import Redirect
 
