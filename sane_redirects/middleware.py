@@ -4,7 +4,8 @@ from django.conf import settings
 from django.http import HttpResponseRedirect
 try:
     from django.utils.deprecation import MiddlewareMixin
-except ImportError:  # Django<1.9
+except ImportError:  # pragma: no cover
+    # Django<1.9
     MiddlewareMixin = object
 
 from .models import Redirect
