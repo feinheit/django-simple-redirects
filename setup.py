@@ -8,7 +8,7 @@ with open(join(dirname(__file__), "README.rst")) as f:
 
 setup(
     name="django-sane-redirects",
-    version="1.0.2",
+    version=__import__("sane_redirects").__version__,
     packages=find_packages(exclude=["tests", "testapp"]),
     include_package_data=True,
     license="MIT License",
@@ -20,19 +20,12 @@ setup(
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
-        "Framework :: Django :: 1.8",
-        "Framework :: Django :: 1.9",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: 3.5",
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
-    test_suite="testapp.runtests.runtests",
-    tests_require=["Django", "coverage"],
 )
