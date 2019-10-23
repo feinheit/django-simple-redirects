@@ -5,5 +5,5 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class SaneRedirectsConfig(AppConfig):
-    name = 'sane_redirects'
-    verbose_name = _('redirects')
+    name = "sane_redirects"
+    verbose_name = _("redirects")

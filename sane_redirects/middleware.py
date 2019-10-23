@@ -2,6 +2,7 @@ from __future__ import absolute_import, unicode_literals
 
 from django.conf import settings
 from django.http import HttpResponseRedirect
+
 try:
     from django.utils.deprecation import MiddlewareMixin
 except ImportError:  # pragma: no cover
@@ -23,10 +24,10 @@ class RedirectFallbackMiddleware(MiddlewareMixin):
             r = Redirect.objects.get(old_path=full_path)
         except Redirect.DoesNotExist:
             pass
-        if settings.APPEND_SLASH and not request.path.endswith('/'):
+        if settings.APPEND_SLASH and not request.path.endswith("/"):
             # Try appending a trailing slash.
             path_len = len(request.path)
-            full_path = full_path[:path_len] + '/' + full_path[path_len:]
+            full_path = full_path[:path_len] + "/" + full_path[path_len:]
             try:
                 r = Redirect.objects.get(old_path=full_path)
             except Redirect.DoesNotExist:
