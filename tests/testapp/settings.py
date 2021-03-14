@@ -4,7 +4,7 @@ import os
 DEBUG = True
 
 DATABASES = {
-    "default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "sane_redirects"}
+    "default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "simple_redirects"}
 }
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "testapp",
     # Libraries
-    "sane_redirects",
+    "simple_redirects",
 ]
 
 STATIC_URL = "/static/"
@@ -56,5 +56,5 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "sane_redirects.middleware.RedirectFallbackMiddleware",
+    "simple_redirects.middleware.RedirectFallbackMiddleware",
 ]

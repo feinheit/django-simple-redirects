@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from sane_redirects.models import Redirect
+from simple_redirects.models import Redirect
 
 
 class RedirectsTestCase(TestCase):

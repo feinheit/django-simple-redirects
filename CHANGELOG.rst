@@ -9,6 +9,8 @@ Change log
 - Dropped compatibility with Django<2.2 and Python<3.6.
 - Switched to a declarative setup.
 - Switched to GitHub actions.
+- Renamed the package to django-simple-redirects. The previous name was
+  needlessly derogatory.
 
 
 `1.1`_ (2019-10-23)
@@ -23,6 +25,6 @@ Change log
 - Initial public release.
 
 
-.. _1.0: https://github.com/feinheit/django-sane-redirects/commit/fb714474a21
-.. _1.1: https://github.com/feinheit/django-sane-redirects/compare/1.0.0...1.1
-.. _Next version: https://github.com/feinheit/django-sane-redirects/compare/1.1...master
+.. _1.0: https://github.com/feinheit/django-simple-redirects/commit/fb714474a21
+.. _1.1: https://github.com/feinheit/django-simple-redirects/compare/1.0.0...1.1
+.. _Next version: https://github.com/feinheit/django-simple-redirects/compare/1.1...master
