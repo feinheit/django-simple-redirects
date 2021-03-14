@@ -6,6 +6,10 @@ Change log
 `Next version`_
 ~~~~~~~~~~~~~~~
 
+
+`2.0`_ (2021-03-14)
+~~~~~~~~~~~~~~~~~~~
+
 - Dropped compatibility with Django<2.2 and Python<3.6.
 - Switched to a declarative setup.
 - Switched to GitHub actions.
@@ -27,4 +31,5 @@ Change log
 
 .. _1.0: https://github.com/feinheit/django-simple-redirects/commit/fb714474a21
 .. _1.1: https://github.com/feinheit/django-simple-redirects/compare/1.0.0...1.1
-.. _Next version: https://github.com/feinheit/django-simple-redirects/compare/1.1...master
+.. _2.0: https://github.com/feinheit/django-simple-redirects/compare/1.1...2.0
+.. _Next version: https://github.com/feinheit/django-simple-redirects/compare/2.0...master
