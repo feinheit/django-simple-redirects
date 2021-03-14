@@ -6,6 +6,11 @@ Change log
 `Next version`_
 ~~~~~~~~~~~~~~~
 
+- Dropped compatibility with Django<2.2 and Python<3.6.
+- Switched to a declarative setup.
+- Switched to GitHub actions.
+
+
 `1.1`_ (2019-10-23)
 ~~~~~~~~~~~~~~~~~~~
 

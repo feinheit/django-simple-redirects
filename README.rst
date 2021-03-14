@@ -2,6 +2,10 @@
 django-sane-redirects
 =====================
 
+.. image:: https://github.com/matthiask/django-sane-redirects/actions/workflows/tests.yml/badge.svg
+    :target: https://github.com/matthiask/django-sane-redirects/
+    :alt: CI Status
+
 ``django.contrib.redirects`` without a ``django.contrib.sites`` dependency
 
 Usage:

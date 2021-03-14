@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.http import HttpResponseRedirect
 
+
 try:
     from django.utils.deprecation import MiddlewareMixin
 except ImportError:  # pragma: no cover
