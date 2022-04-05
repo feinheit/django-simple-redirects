@@ -28,4 +28,4 @@ class Redirect(models.Model):
         verbose_name_plural = _("redirects")
 
     def __str__(self):
-        return "%s ---> %s" % (self.old_path, self.new_path)
+        return f"{self.old_path} ---> {self.new_path}"
