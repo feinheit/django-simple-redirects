@@ -10,6 +10,8 @@ Change log
 
 - Required Python >= 3.8 and Django >= 3.2.
 - Started using pre-commit.
+- Dropped the ``default_app_config`` variable.
+- Added Django 4.1.
 
 
 `2.0`_ (2021-03-14)
