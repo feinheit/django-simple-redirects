@@ -6,7 +6,13 @@ Change log
 `Next version`_
 ~~~~~~~~~~~~~~~
 
-.. _Next version: https://github.com/feinheit/django-simple-redirects/compare/2.0...main
+.. _Next version: https://github.com/feinheit/django-simple-redirects/compare/2.1...main
+
+
+`2.1`_ (2021-09-19)
+~~~~~~~~~~~~~~~~~~~
+
+.. _2.1: https://github.com/feinheit/django-simple-redirects/compare/2.0...2.1
 
 - Required Python >= 3.8 and Django >= 3.2.
 - Started using pre-commit.
