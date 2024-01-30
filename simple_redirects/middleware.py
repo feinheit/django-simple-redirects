@@ -2,7 +2,7 @@ from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.utils.deprecation import MiddlewareMixin
 
-from .models import Redirect
+from simple_redirects.models import Redirect
 
 
 class RedirectFallbackMiddleware(MiddlewareMixin):
