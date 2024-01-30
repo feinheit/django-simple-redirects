@@ -3,12 +3,14 @@
 Change log
 ==========
 
-`Next version`_
-~~~~~~~~~~~~~~~
+2.2 (2024-01-30)
+~~~~~~~~~~~~~~~~
 
 .. _Next version: https://github.com/feinheit/django-simple-redirects/compare/2.1...main
 
 - Added Python 3.11, 3.12, Django 4.2, 5.0.
+- Dropped Python < 3.9.
+- Allowed searching the redirects.
 
 
 `2.1`_ (2021-09-19)
